@@ -5,6 +5,7 @@ image:
   repository: aozcalisanmg/mywebapp
   pullPolicy: IfNotPresent
   tag: "468ecaa40dee324fec33442c61700a4f1187caa3"
+  imagePullPolicy: Always
   
 imagePullSecrets: []
 nameOverride: ""
@@ -14,7 +15,7 @@ redis:
   fullnameOverride: "mywebapp-redis"
   auth:
     enabled: false
-    
+
 podAnnotations: {}
 podLabels: {}
 

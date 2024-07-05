@@ -24,6 +24,7 @@ spec:
       containers:
         - name: {{ .Chart.Name }}-{{ .Values.branch }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}" 
+          imagePullPolicy: {{ .Values.image.imagePullPolicy }}
           resources:
             requests:
               memory: "{{ .Values.resources.requests.memory }}"
