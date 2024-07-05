@@ -7,5 +7,5 @@ dependencies:
     version: "19.6.1"
     repository: "https://charts.bitnami.com/bitnami"
 
-version: 0.1.18
-appVersion: "1.16.18"
+version: 0.1.19
+appVersion: "1.16.19"
