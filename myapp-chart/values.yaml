@@ -10,6 +10,11 @@ imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""
 
+redis:
+  fullnameOverride: "mywebapp-redis"
+  auth:
+    enabled: false
+    
 podAnnotations: {}
 podLabels: {}
 
