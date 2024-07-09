@@ -6,6 +6,9 @@ dependencies:
   - name: redis
     version: "19.6.1"
     repository: "https://charts.bitnami.com/bitnami"
+  - name: kafka
+    version: "29.3.7"
+    repository: "https://charts.bitnami.com/bitnami"    
 
 version: 0.1.22
 appVersion: "1.16.22"

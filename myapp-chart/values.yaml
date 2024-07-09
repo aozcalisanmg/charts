@@ -16,6 +16,9 @@ redis:
   auth:
     enabled: false
 
+kafka:
+  fullnameOverride: "mywebapp-kafka"    
+
 podAnnotations: {}
 podLabels: {}
 
