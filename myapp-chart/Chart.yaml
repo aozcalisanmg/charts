@@ -10,5 +10,5 @@ dependencies:
     version: "29.3.7"
     repository: "https://charts.bitnami.com/bitnami"    
 
-version: 0.1.22
-appVersion: "1.16.22"
+version: 0.1.23
+appVersion: "1.16.23"
