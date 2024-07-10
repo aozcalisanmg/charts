@@ -4,7 +4,7 @@ branch: development
 image:
   repository: aozcalisanmg/mywebapp
   pullPolicy: IfNotPresent
-  tag: "81a818ce5a2754f5b21f7eec78cfb8d022265944"
+  tag: "28"
   imagePullPolicy: Always
   
 imagePullSecrets: []
