@@ -1,0 +1,16 @@
+apiVersion: v2
+name: project-infrastructure
+description: Umbrella chart for project infrastructure
+type: application
+version: 0.1.0
+appVersion: "1.0"
+dependencies:
+  - name: redis
+    version: "17.3.14"
+    repository: "https://charts.bitnami.com/bitnami"
+  - name: kafka
+    version: "21.0.1"
+    repository: "https://charts.bitnami.com/bitnami"
+  - name: zookeeper
+    version: "11.0.1"
+    repository: "https://charts.bitnami.com/bitnami"

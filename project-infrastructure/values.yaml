@@ -1,0 +1,48 @@
+redis:
+  architecture: standalone
+  auth:
+    enabled: true
+    password: "passwd123"
+  persistence:
+    enabled: true
+    size: 1Gi
+  resources:
+    requests:
+      cpu: 100m
+      memory: 128Mi
+    limits:
+      cpu: 250m
+      memory: 256Mi
+
+kafka:
+  replicaCount: 3
+  persistence:
+    enabled: true
+    size: 1Gi
+  zookeeper:
+    enabled: false  # We'll use our separate ZooKeeper installation
+  externalZookeeper:
+    servers:
+      - "zookeeper-service:2181"
+  resources:
+    requests:
+      cpu: 200m
+      memory: 512Mi
+    limits:
+      cpu: 500m
+      memory: 1Gi
+
+zookeeper:
+  replicaCount: 3
+  auth:
+    enabled: false
+  persistence:
+    enabled: true
+    size: 2Gi
+  resources:
+    requests:
+      cpu: 100m
+      memory: 256Mi
+    limits:
+      cpu: 250m
+      memory: 512Mi
